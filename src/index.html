@@ -3,18 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Homework 13</title>
+
   </head>
   <body>
-   
+    <div class="search__container">
+      <h1 class="title">Поиск картинок</h1>
+      <form class="search-form" id="search-form">
+        <input class="search__input" type="text" name="query" autocomplete="off" placeholder="Введите запрос" />
+        <button class="btn" type="submit">Поиск...</button>
+      </form>
+    </div>
+    
+    <ul class="gallery js-container__gallery">
+    
+    </ul>
+    
+    <button class="btn__load js-loadMoreBtn" type="button">Загрузить еще...</button>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+
     <script src="./index.js"></script>
+    <script src="./partials/js/apiService.js"></script>
+    <script src="./partials/js/loadBtn.js"></script>
   </body>
 </html>
