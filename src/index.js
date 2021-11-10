@@ -66,7 +66,7 @@ web.init();
 // form.addEventListener('submit', onSearchForm);
 // loadMoreBtn.loadbtn.addEventListener('click', onLoadBtn);
 
-
+//
 // function onSearchForm(evt) {
 //     evt.preventDefault();
 //     loadMoreBtn.show();
